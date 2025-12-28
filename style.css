@@ -1,0 +1,166 @@
+/* ===================== RESET ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ===================== BACKGROUND ===================== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 192, 203, 0.45),
+      rgba(221, 160, 221, 0.45)
+    ),
+    url("bg.jpg") no-repeat center / cover;
+  padding: 40px;
+}
+
+/* ===================== HEADINGS ===================== */
+h1,
+h2 {
+  text-align: center;
+  color: #4b145b;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 6px rgba(255, 182, 193, 0.6);
+}
+
+/* ===================== FORM (GLASS) ===================== */
+#studentForm {
+  width: 360px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 182, 193, 0.5);
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+}
+
+/* Inputs */
+#studentForm input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(219, 112, 147, 0.4);
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 240, 245, 0.9);
+  color: #4b145b;
+}
+
+#studentForm input::placeholder {
+  color: #9d5c7c;
+}
+
+/* Input Focus */
+#studentForm input:focus {
+  border-color: #db7093;
+  box-shadow: 0 0 0 2px rgba(219, 112, 147, 0.3);
+}
+
+/* Button */
+#studentForm button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff9ebc, #d16ba5);
+  border: none;
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#studentForm button:hover {
+  background: linear-gradient(135deg, #f78fb3, #c471ed);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(219, 112, 147, 0.5);
+}
+
+/* ===================== TABLE ===================== */
+table {
+  width: 85%;
+  margin: 30px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(219, 112, 147, 0.35);
+  border-collapse: collapse;
+}
+
+/* Header */
+table th {
+  padding: 14px;
+  background: linear-gradient(135deg, #ffb6c1, #dda0dd);
+  color: #4b145b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Body */
+table td {
+  padding: 12px;
+  color: #4b145b;
+  border-bottom: 1px solid rgba(219, 112, 147, 0.3);
+  text-align: center;
+}
+
+/* Hover */
+table tr:hover {
+  background: rgba(255, 182, 193, 0.25);
+}
+
+/* ===================== ACTION BUTTONS ===================== */
+.actions {
+  white-space: nowrap;
+}
+
+/* Common */
+.actions a {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 0 4px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Edit */
+.edit-btn {
+  background: linear-gradient(135deg, #7ed957, #4caf50);
+}
+
+/* Delete */
+.delete-btn {
+  background: linear-gradient(135deg, #ff6b6b, #e53935);
+}
+
+/* Hover */
+.actions a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  #studentForm {
+    width: 95%;
+  }
+
+  table {
+    width: 95%;
+  }
+
+  table th,
+  table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
